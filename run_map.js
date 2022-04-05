@@ -22,7 +22,13 @@ const map = new Map({
           url: 'cleaned_threlkeld_old_railway.gpx',
           format: new GPX(),
         }),
-    })
+    }),
+    new VectorLayer({
+      source: new VectorSource({
+        url: 'cleaned_derwentwater_loop.gpx',
+        format: new GPX(),
+      }),
+  })
     ],
     view: new View({
       center: fromLonLat([-3.0068, 54.4792]),

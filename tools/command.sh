@@ -13,6 +13,6 @@ xmlstarlet ed \
   | xmlstarlet tr remove-unused-namespaces.xslt - \
   | xmlstarlet ed -u "/_:gpx/@xsi:schemaLocation" -v "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" \
   | xmllint --c14n11 --pretty 2 - \
-  > "cleaned_"+"$1"
+  > "cleaned_$1"
 
 rm $1
