@@ -9,7 +9,7 @@
     "build-dev": "parcel build ./index.html --no-minify --public-url ./",
     "prebuild": "shx rm -rf dist/*",
     "build": "parcel build ./index.html --public-url ./",
-    "push-gh-pages": "push-dir --dir=dist --branch=main --cleanup --verbose"
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "dependencies": {
     "ol": "^6.14.1",
